@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // --- URL DE REDIRECIONAMENTO (ALTERE AQUI) ---
-const SAFE_PAGE_URL = 'https://example.com/safe-page'; // URL externa para bots e tráfego de fora do Brasil
+const SAFE_PAGE_URL = 'https://www.youtube.com/watch?v=qgqOAYCJa94'; // URL externa para bots e tráfego de fora do Brasil
 
 // Lista de User-Agents de bots conhecidos
 const botUserAgents = [

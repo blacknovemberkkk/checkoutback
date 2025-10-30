@@ -74,7 +74,7 @@
     <div class="popup">
         <div class="popup-content">
             <!-- Imagem acima do loader -->
-            <img src="../logo.png" alt="Imagem" class="popup-image">
+            <img src="images/logo.png" alt="Imagem" class="popup-image">
             <!-- Loader -->
             <div class="loader"></div>
             <!-- Mensagem -->
@@ -112,9 +112,9 @@ const utmParams = getUtmParams();
 
 // Definição dos links dos upsells
 const upsellLinks = {
-    'upsell1': 'https://privasimaria.site/app/up1.html',
-    'upsell2': 'https://privasimaria.site/app/up2.html',
-    'upsell3': 'https://privasimaria.site/app/up3.html'
+    'upsell1': window.location.origin + '/app/up1.html',
+    'upsell2': window.location.origin + '/app/up2.html',
+    'upsell3': window.location.origin + '/app/up3.html'
 };
 
 // Verifica se o step existe nos links definidos
@@ -123,7 +123,7 @@ if (step && upsellLinks[step]) {
     redirectUrl = `${upsellLinks[step]}?step=${step}${utmParams}`;
     console.log("Redirecionando para:", redirectUrl);
 } else {
-    redirectUrl = `https://privasimaria.site/app/?step=inicio${utmParams}`;
+    redirectUrl = `${window.location.origin}/app/?step=inicio${utmParams}`;
     console.log("Redirecionando para página inicial:", redirectUrl);
 }
 
